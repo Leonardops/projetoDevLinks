@@ -34,6 +34,7 @@ body {
 
   /*background: volor image repeat position/size*/
   background: var(--bg-url) top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -170,4 +171,15 @@ footer {
 
   text-align: center;
   font-size: 10px;
+}
+
+/*media queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jgp);
+  }
 }
